@@ -6,6 +6,6 @@ RUN git clone https://github.com/connormanning/potree.entwine.io
 
 WORKDIR /potree.entwine.io
 
-EXPOSE 8000
+ENV REDIRECT_URL "http://localhost/"
 
-ENTRYPOINT python3 -m http.server 8000
+ENTRYPOINT python3 -m http.server 8001
