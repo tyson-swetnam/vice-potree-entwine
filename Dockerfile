@@ -7,6 +7,6 @@ RUN git clone https://github.com/connormanning/potree.entwine.io /potree.entwine
 WORKDIR /potree.entwine.io
 
 EXPOSE 8000
-#EXPOSE 80
+EXPOSE 443
 
 ENTRYPOINT python3 -s -m http.server 8000 --directory /potree.entwine.io
